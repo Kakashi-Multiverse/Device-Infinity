@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy A57 5G - Hệ thống Cấu hình Toàn diện</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        samsung: {
+                            blue: '#1428a0',
+                            accent: '#36c',
+                            dark: '#0a0f24',
+                            card: '#111827'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Tối ưu hóa thanh cuộn */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-gray-100 min-h-screen flex flex-col font-sans selection:bg-blue-600 selection:text-white">
+
+    <!-- Header -->
+    <header class="border-b border-gray-800 bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-lg shadow-lg shadow-blue-500/20">
+                    <!-- Chip/Processor SVG Icon -->
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
+                        GALAXY A57 5G SYSTEM ENGINE
+                    </h1>
+                    <p class="text-xs text-gray-400">Phiên bản giả lập & tối ưu hóa toàn diện - Tháng 6/2026</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">
+                    <span class="w-1.5 h-1.5 mr-1.5 bg-green-500 rounded-full animate-ping"></span>
+                    Android 17 (SDK 37) Active
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Bảng điều khiển cấu hình (Left - 7 cols) -->
+        <section class="lg:col-span-7 space-y-6">
+            
+            <!-- Thông tin thiết bị cốt lõi -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl">
+                <h2 class="text-base font-semibold mb-4 text-blue-400 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    Thông Số Thiết Bị & Hệ Điều Hành
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <label class="block text-gray-400 text-xs mb-1">Model Thiết Bị</label>
+                        <input id="deviceModel" type="text" value="SM-A576E" class="w-full bg-gray-800 border border-gray-700 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 text-xs mb-1">Mã Phần Cứng (Build.HARDWARE)</label>
+                        <input id="deviceHardware" type="text" value="s5e8865" class="w-full bg-gray-800 border border-gray-700 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 text-xs mb-1">Android Version SDK</label>
+                        <input id="deviceSdk" type="number" value="37" class="w-full bg-gray-800 border border-gray-700 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 text-xs mb-1">Android OS Release</label>
+                        <input id="deviceRelease" type="number" value="17" class="w-full bg-gray-800 border border-gray-700 rounded p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mở khóa hiệu năng và đồ họa -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl">
+                <h2 class="text-base font-semibold mb-4 text-amber-400 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Tối Ưu Đồ Họa & Tốc Độ Khung Hình (Gaming)
+                </h2>
+                <div class="space-y-4">
+                    <!-- Toggles -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
+                            <div>
+                                <p class="text-sm font-medium">Hỗ trợ 120 FPS</p>
+                                <p class="text-xs text-gray-400">Cho phép quét khung hình cực cao</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="support120Fps" checked class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
+                            <div>
+                                <p class="text-sm font-medium">Độ Phân Giải Ultra HD</p>
+                                <p class="text-xs text-gray-400">Kích hoạt hiển thị siêu nét</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="supportUltraHd" checked class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
+                            <div>
+                                <p class="text-sm font-medium">Bỏ Giới Hạn Đồ Họa (Max Graphics)</p>
+                                <p class="text-xs text-gray-400">Ép game mở cấu hình tối đa</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="unlockMaxGraphics" checked class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
+                            <div>
+                                <p class="text-sm font-medium">Mở Khóa Toàn Bộ Hiệu Ứng</p>
+                                <p class="text-xs text-gray-400">Đầy đủ đổ bóng, hạt, tương phản</p>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="unlockEffects" checked class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Âm thanh & Hình ảnh Điện Ảnh -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl">
+                <h2 class="text-base font-semibold mb-4 text-purple-400 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+                    Công Nghệ Âm Thanh & Hình Ảnh Điện Ảnh
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Dolby Atmos -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Dolby Atmos</span>
+                            <p class="text-xs text-gray-400 mt-1">Âm thanh vòm đa hướng 3D sống động.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="dolbyAtmos" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-purple-500"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Dolby Vision -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-pink-400 uppercase tracking-widest">Dolby Vision</span>
+                            <p class="text-xs text-gray-400 mt-1">Độ tương phản và dải màu HDR siêu thực.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="dolbyVision" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-pink-500"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- DTS Audio -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">DTS Audio</span>
+                            <p class="text-xs text-gray-400 mt-1">Xử lý âm thanh vòm kỹ thuật số chất lượng phòng thu.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="dtsAudio" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Định danh ứng dụng (Clients) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl">
+                <h2 class="text-base font-semibold mb-4 text-emerald-400 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Hệ Thống Client Giả Lập (Đa Cổng)
+                </h2>
+                <p class="text-xs text-gray-400 mb-3">Tùy chỉnh định danh Client giúp vượt rào xác thực của các nền tảng game lớn như Epic Games, AppStore, Google Play.</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <label class="flex items-center gap-2 text-sm cursor-pointer bg-gray-800 px-3 py-2 rounded border border-gray-700 flex-1">
+                            <input type="checkbox" id="clientGoogle" checked class="rounded text-emerald-500 focus:ring-emerald-500 bg-gray-900 border-gray-700">
+                            <span>Google Android Client</span>
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer bg-gray-800 px-3 py-2 rounded border border-gray-700 flex-1">
+                            <input type="checkbox" id="clientSamsung" checked class="rounded text-emerald-500 focus:ring-emerald-500 bg-gray-900 border-gray-700">
+                            <span>Samsung Store Client</span>
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer bg-gray-800 px-3 py-2 rounded border border-gray-700 flex-1">
+                            <input type="checkbox" id="clientApple" checked class="rounded text-emerald-500 focus:ring-emerald-500 bg-gray-900 border-gray-700">
+                            <span>Apple Engine Client</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trình hiển thị & Thao tác kết quả (Right - 5 cols) -->
+        <section class="lg:col-span-5 flex flex-col h-full space-y-4">
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl flex-1 flex flex-col min-h-[450px]">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-base font-semibold text-blue-400 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        Mã Nguồn Cấu Hình (#DEVICE_CONFIG)
+                    </h2>
+                    <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded uppercase font-bold tracking-wider">Live Output</span>
+                </div>
+
+                <div class="relative flex-1 bg-gray-950 rounded-lg border border-gray-800 p-3 overflow-hidden flex flex-col">
+                    <textarea id="configOutput" readonly class="w-full flex-1 bg-transparent text-gray-300 font-mono text-[11px] leading-relaxed resize-none focus:outline-none" placeholder="Cấu hình hệ thống sẽ tự động hiển thị tại đây..."></textarea>
+                    
+                    <!-- Bản thông báo nhanh tạm thời -->
+                    <div id="toastMessage" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1.5 rounded shadow-lg transition-all duration-300 opacity-0 pointer-events-none">
+                        Đã sao chép vào bộ nhớ tạm!
+                    </div>
+                </div>
+
+                <!-- Thao tác nhanh -->
+                <div class="grid grid-cols-2 gap-3 mt-4">
+                    <button id="btnCopy" class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-medium py-2.5 px-4 rounded-lg border border-gray-700 transition-all active:scale-95 text-sm">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                        Sao Chép Mã
+                    </button>
+                    <button id="btnDownload" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-4 rounded-lg transition-all active:scale-95 text-sm shadow-lg shadow-blue-600/20">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Tải Xuống File
+                    </button>
+                </div>
+            </div>
+
+            <!-- Panel Trợ Giúp Kỹ Thuật -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 shadow-xl text-xs">
+                <h3 class="font-semibold text-gray-300 mb-2 flex items-center gap-1.5 text-sm text-yellow-400">
+                    <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Hướng Dẫn Sử Dụng & Triển Khai
+                </h3>
+                <ul class="space-y-1.5 text-gray-400 list-decimal pl-4">
+                    <li>Thay đổi các tùy chọn ở thanh bên trái theo nhu cầu sử dụng thực tế của game bạn nhắm đến.</li>
+                    <li>Sử dụng nút <strong>Tải xuống file</strong> để nhận tệp cấu hình dạng text hoàn chỉnh.</li>
+                    <li>Đặt lại tên file thành <code class="bg-gray-800 px-1 text-red-400 rounded">device_config.txt</code> hoặc <code class="bg-gray-800 px-1 text-red-400 rounded">samsung_a57.prop</code> tùy thuộc vào tool nạp hệ thống của bạn (Magisk, LSposed, hoặc GLTools).</li>
+                    <li>Nạp file vào thư mục đích của phân vùng ảo hoặc hệ thống Android gốc của bạn để tận hưởng trải nghiệm mượt mà không giới hạn.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-gray-900/40 py-4 px-4 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p>© 2026 Samsung Galaxy A57 System Mod Tool Kit. Toàn bộ thông số được lập lịch tự động theo cấu hình tháng 6/2026.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-blue-400 transition-colors">Điều khoản</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Bảo mật</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic tạo mã và cấu hình tương tác -->
+    <script>
+        // Lấy các element đầu vào
+        const deviceModel = document.getElementById('deviceModel');
+        const deviceHardware = document.getElementById('deviceHardware');
+        const deviceSdk = document.getElementById('deviceSdk');
+        const deviceRelease = document.getElementById('deviceRelease');
+        
+        const support120Fps = document.getElementById('support120Fps');
+        const supportUltraHd = document.getElementById('supportUltraHd');
+        const unlockMaxGraphics = document.getElementById('unlockMaxGraphics');
+        const unlockEffects = document.getElementById('unlockEffects');
+        
+        const dolbyAtmos = document.getElementById('dolbyAtmos');
+        const dolbyVision = document.getElementById('dolbyVision');
+        const dtsAudio = document.getElementById('dtsAudio');
+        
+        const clientGoogle = document.getElementById('clientGoogle');
+        const clientSamsung = document.getElementById('clientSamsung');
+        const clientApple = document.getElementById('clientApple');
+        
+        const configOutput = document.getElementById('configOutput');
+        const btnCopy = document.getElementById('btnCopy');
+        const btnDownload = document.getElementById('btnDownload');
+        const toastMessage = document.getElementById('toastMessage');
+
+        // Hàm tạo file config dựa trên lựa chọn người dùng
+        function generateDeviceConfig() {
+            // Thiết lập mốc thời gian thực hiện giả lập
+            const now = new Date();
+            const dateStr = now.toString();
+
+            // Xử lý chuỗi clients
+            const clients = [];
+            if (clientGoogle.checked) clients.push('android-google');
+            if (clientSamsung.checked) clients.push('samsung');
+            if (clientApple.checked) clients.push('apple');
+            const clientValue = clients.join(',');
+
+            // Xử lý các dòng bổ sung cho các tính năng đặc biệt
+            let extraFeatures = [];
+            if (dolbyAtmos.checked) extraFeatures.push('android.hardware.audio.dolby.atmos');
+            if (dolbyVision.checked) extraFeatures.push('com.dolby.motion.dolby-vision');
+            if (dtsAudio.checked) extraFeatures.push('android.hardware.audio.dts');
+
+            const featuresBase = "android.hardware.sensor.proximity,com.google.android.feature.CONTEXTUAL_SEARCH,com.samsung.android.sdk.camera.processor,com.google.android.feature.GEMINI_EXPERIENCE,com.samsung.feature.aodservice_v10,com.sec.feature.motionrecognition_service,com.sec.feature.cover.sview,android.hardware.telephony.ims.singlereg,android.hardware.sensor.accelerometer,android.software.controls,android.hardware.faketouch,android.software.telecom,com.samsung.feature.audio_listenback,android.hardware.telephony.subscription,android.hardware.usb.accessory,android.hardware.telephony.data,android.software.backup,android.hardware.touchscreen,android.hardware.touchscreen.multitouch,android.software.erofs,android.software.print,android.software.activities_on_secondary_displays,com.sec.feature.nfc_authentication_cover,com.google.android.feature.GEMINI_POWER_MENU,com.samsung.feature.SAMSUNG_EXPERIENCE,com.samsung.feature.nowbar,com.google.android.feature.ACCESSIBILITY_PRELOAD,com.sec.feature.nfc_authentication,android.software.voice_recognizers,android.software.picture_in_picture,android.hardware.fingerprint,com.samsung.android.knox.knoxsdk,android.hardware.telephony.satellite,android.hardware.sensor.gyroscope,android.hardware.audio.low_latency,android.software.vulkan.deqp.level,android.software.cant_save_state,android.hardware.security.model.compatible,android.hardware.telephony.messaging,com.samsung.feature.device_category_phone,android.hardware.telephony.calling,android.hardware.opengles.aep,com.sec.feature.sensorhub,android.hardware.bluetooth,android.software.window_magnification,android.hardware.telephony.radio.access,android.hardware.camera.autofocus,android.hardware.telephony.gsm,android.hardware.telephony.ims,com.sec.feature.cocktailpanel,android.software.incremental_delivery,android.software.sip.voip,android.software.opengles.deqp.level,com.sec.feature.saccessorymanager,com.android.extensions.computercontrol,com.google.android.feature.CONTEXTUAL_SEARCH_LIVE_TRANSLATE,com.samsung.feature.samsung_experience_mobile,com.samsung.android.camera.cameraserviceworker,android.hardware.usb.host,android.hardware.audio.output,android.software.verified_boot,android.hardware.camera.flash,android.hardware.camera.front,android.hardware.se.omapi.uicc,android.hardware.screen.portrait,com.google.android.feature.ASI,android.hardware.nfc,com.google.android.feature.TURBO_PRELOAD,com.samsung.feature.ipsgeofence,com.nxp.mifare,com.samsung.feature.SAMSUNG_EXPERIENCE_AM,android.hardware.sensor.stepdetector,android.software.home_screen,android.hardware.microphone,com.sec.feature.cover.clearcameraviewcover,com.samsung.feature.aremoji.v2,android.software.autofill,com.samsung.android.sdk.camera.processor.effect,android.software.securely_removes_users,android.hardware.bluetooth_le,android.hardware.sensor.compass,android.hardware.touchscreen.multitouch.jazzhand,android.software.app_widgets,android.software.input_methods,android.hardware.sensor.light,android.hardware.vulkan.version,android.software.companion_device_setup,android.software.device_admin,android.hardware.wifi.passpoint,android.hardware.camera,android.software.credentials,android.hardware.screen.landscape,android.software.device_id_attestation,com.google.android.feature.AER_OPTIMIZED,android.hardware.ram.normal,com.samsung.feature.samsungpositioning.snlp,com.samsung.android.authfw,com.samsung.android.api.version.2402,com.samsung.android.api.version.2403,com.samsung.android.api.version.2501,com.samsung.android.api.version.2502,com.samsung.android.api.version.2601,com.samsung.android.api.version.2701,com.samsung.android.api.version.2801,com.samsung.android.api.version.2802,com.samsung.android.api.version.2803,com.samsung.android.api.version.2901,com.samsung.android.api.version.2902,com.samsung.android.api.version.2903,com.samsung.android.api.version.3001,com.samsung.android.api.version.3002,com.samsung.android.api.version.3101,com.samsung.android.api.version.3201,com.samsung.android.api.version.3301,com.samsung.android.api.version.3302,com.samsung.android.api.version.3401,com.samsung.android.api.version.3402,com.samsung.android.api.version.3501,com.samsung.android.api.version.3601,com.samsung.android.api.version.3602,com.samsung.android.api.version.3701,com.samsung.android.api.version.3702,com.sec.feature.cover,android.software.managed_users,com.sec.feature.nsflp,android.software.webview,android.hardware.sensor.stepcounter,android.hardware.camera.any,android.hardware.vulkan.compute,com.samsung.android.oneui.version.10000,com.samsung.android.oneui.version.10100,com.samsung.android.oneui.version.10200,com.samsung.android.oneui.version.10500,com.samsung.android.oneui.version.20000,com.samsung.android.oneui.version.20100,com.samsung.android.oneui.version.20500,com.samsung.android.oneui.version.30000,com.samsung.android.oneui.version.30100,com.samsung.android.oneui.version.30101,com.samsung.android.oneui.version.40000,com.samsung.android.oneui.version.40100,com.samsung.android.oneui.version.40101,com.samsung.android.oneui.version.50000,com.samsung.android.oneui.version.50100,com.samsung.android.oneui.version.50101,com.samsung.android.oneui.version.60000,com.samsung.android.oneui.version.60100,com.samsung.android.oneui.version.60101,com.samsung.android.oneui.version.70000,com.samsung.android.oneui.version.80000,com.samsung.android.oneui.version.80500,android.hardware.touchscreen.multitouch.distinct,android.hardware.location.network,com.sec.android.secimaging,android.software.cts,android.software.sip,android.software.app_enumeration,com.sec.feature.usb_authentication,android.hardware.wifi.direct,android.software.live_wallpaper,android.software.ipsec_tunnels,samsung.software.secure_key_service,android.software.freeform_window_management,android.hardware.audio.pro,android.hardware.nfc.hcef,android.hardware.nfc.uicc,com.samsung.feature.support_repair_mode,android.hardware.location.gps,com.samsung.android.camera.deviceinjector,android.software.midi,com.samsung.feature.samsungpositioning,android.hardware.nfc.any,android.hardware.nfc.hce,android.hardware.hardware_keystore,com.sec.feature.pocketsensitivitymode,android.hardware.wifi,android.hardware.location,com.google.android.mainline.patchlevel.2,android.hardware.vulkan.level,android.hardware.keystore.app_attest_key,com.samsung.android.cameraxservice,com.samsung.android.knox.knoxsdk.api.level.33,com.samsung.android.knox.knoxsdk.api.level.34,com.samsung.android.knox.knoxsdk.api.level.35,com.samsung.android.knox.knoxsdk.api.level.36,com.samsung.android.knox.knoxsdk.api.level.37,com.samsung.android.knox.knoxsdk.api.level.38,com.samsung.android.knox.knoxsdk.api.level.39,com.samsung.android.knox.knoxsdk.api.level.40,com.samsung.android.knox.knoxsdk.api.level.41,android.hardware.wifi.aware,android.software.secure_lock_screen,android.hardware.biometrics.face,com.samsung.feature.EXPERIENCE_CTS,android.hardware.telephony,com.sec.android.smartface.smart_stay,android.software.file_based_encryption";
+            
+            // Hợp nhất các features bổ sung
+            let fullFeatures = featuresBase;
+            if (extraFeatures.length > 0) {
+                fullFeatures += "," + extraFeatures.join(",");
+            }
+
+            // Chữ ký thiết bị giả định (fingerprint) dựa trên đầu vào
+            const modelUpper = deviceModel.value.toUpperCase();
+            const lowerBrand = "samsung";
+            const deviceShort = "a57x";
+            const buildId = "CP1A.260601.001";
+            const sdkInt = deviceSdk.value;
+            const releaseVer = deviceRelease.value;
+
+            // Xây dựng chuỗi tệp tin
+            let fileContent = `#DEVICE_CONFIG\n`;
+            fileContent += `#${dateStr}\n`;
+            fileContent += `HasHardKeyboard=false\n`;
+            fileContent += `Build.HARDWARE=${deviceHardware.value}\n`;
+            fileContent += `Build.BRAND=${lowerBrand}\n`;
+            fileContent += `Build.VERSION.SDK_INT=${sdkInt}\n`;
+            fileContent += `Roaming=mobile-notroaming\n`;
+            fileContent += `Build.MODEL=${modelUpper}\n`;
+            fileContent += `Vending.versionString=52.1.12-31 [0] [PR] 954213107\n`;
+            fileContent += `Vending.version=85211230\n`;
+            fileContent += `CellOperator=310\n`;
+            fileContent += `Build.FINGERPRINT=${lowerBrand}/${deviceShort}jvxx/${deviceShort}:${releaseVer}/${buildId}/${modelUpper}XXU1BZF2:user/release-keys\n`;
+            fileContent += `Build.DEVICE=${deviceShort}\n`;
+            fileContent += `Screen.Height=2400\n`;
+            fileContent += `SimOperator=38\n`;
+            fileContent += `ScreenLayout=2\n`;
+            fileContent += `SharedLibraries=libFood.camera.samsung.so,libFacePreProcessing_jni.camera.samsung.so,lib_nativeJni.dk.samsung.so,libStride.camera.samsung.so,android.test.base,android.test.mock,sec_platform_library,com.samsung.device,libomission_avoidance.factory.samsung.so,SemAudioThumbnail,libenn_public_api_cpp.so,libSDKMoireDetector.spenocr.samsung.so,libInteractiveSegmentation.camera.samsung.so,com.sec.esecomm,com.samsung.android.ibs.framework-v1,libDLInterface_aidl.camera.samsung.so,android.hidl.manager-V1.0-java,libBeauty_v4.camera.samsung.so,libsimba.cfa.media.samsung.so,libUltraWideDistortionCorrection.camera.samsung.so,libImageScreener.camera.samsung.so,libsecimaging.camera.samsung.so,com.samsung.android.semtelephonesdk.framework-v1,libcore2nativeutil.camera.samsung.so,com.android.hotwordenrollment.common.util,libDualCamBokehCapture.camera.samsung.so,vsimmanager,libhumantracking_util.camera.samsung.so,libSDKRecognitionOCR.spenocr.samsung.so,libknox_remotedesktopclient.knox.samsung.so,libOpenCv.camera.samsung.so,libtflite2.myfilters.camera.samsung.so,libsec_camerax_util_jni.camera.samsung.so,libOpenCL.so,libhal.wsm.samsung.so,libFoodDetector.camera.samsung.so,libSDKRecognitionText.spensdk.samsung.so,libaudiomirroring_jni.audiomirroring.samsung.so,lib_native_client.dk.samsung.so,libMyFilterPlugin.camera.samsung.so,libperfsdk.performance.samsung.so,libmotionphoto_jni.media.samsung.so,android.telephony.satellite,libSEF.quram.so,mcfsdk,libhumantracking.arcsoft.so,android.hidl.base-V1.0-java,libsume_mediabuffer_jni.media.samsung.so,libmetadata.vexfwk.samsung.so,libsrib_MQA.camera.samsung.so,libFacialStickerEngine.arcsoft.so,libimgproc.vexfwk.samsung.so,libtensorflowlite_c.camera.samsung.so,libruntime.vexfwk.samsung.so,libQREngine.camera.samsung.so,com.samsung.bbc,libjpegsq.media.samsung.so,libHprFace_GAE_jni.camera.samsung.so,libheifcapture_jni.media.samsung.so,SecureKeyBlob,samsungkeystoreutils,libLocalTM_wrapper.camera.samsung.so,lib.engmodejni.samsung.so,com.android.extensions.computercontrol,libportrait_controller_engine.camera.samsung.so,libopencv_java4.12.media.samsung.so,libRectify.camera.samsung.so,libPortraitSolution.camera.samsung.so,libimagecodec.quram.so,com.android.location.provider,secimaging,worker_wrapper_compat,androidx.window.extensions,MnxbService,knoxsdk,semextendedformat,semmediatranscoder,libobjectcapture_jni.arcsoft.so,libsurfaceutil.camera.samsung.so,libMyFilter.camera.samsung.so,libRemasterEngine.camera.samsung.so,libsrib_humanaware_engine.camera.samsung.so,libagifencoder.quram.so,libsum_jni.media.samsung.so,android.net.ipsec.ike,libsecjpeginterface.camera.samsung.so,libgfxgrab.gpuwatchapp.samsung.so,libeden_rt_stub.edensdk.samsung.so,libFace_Landmark_API.camera.samsung.so,com.android.future.usb.accessory,libDocRectifyWrapper.camera.samsung.so,lib_vnd_client.dk.samsung.so,saiv,androidx.camera.extensions.impl,libslljpeg.media.samsung.so,libmotionphoto_utils_jni.media.samsung.so,libcommon-jni.vexfwk.samsung.so,ztsdk,android.ext.shared,libEventDetector.camera.samsung.so,libandroid.vexfwk.samsung.so,libsume_jni.media.samsung.so,libveengine.arcsoft.so,libveframework.videoeditor.samsung.so,libImageCropper.camera.samsung.so,libSFEffect.fonteffect.samsung.so,libsdk-v2-jni.vexfwk.samsung.so,javax.obex,libsemimagecrop_jni.media.samsung.so,com.google.android.gms,libStrideTensorflowLite.camera.samsung.so,libC2paDps.camera.samsung.so,libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so,libjpega.camera.samsung.so,libmidas_DNNInterface.camera.samsung.so,liblow_light_hdr.arcsoft.so,PQCKeystoreProvider,com.samsung.android.nfc.adapter,libsecbufferhandler.camera.samsung.so,libexifa.camera.samsung.so,com.sec.android.sdhmssdk.framework-v1,libImageTagger.camera.samsung.so,libobjectcapture.arcsoft.so,libHprFace_GAE_api.camera.samsung.so,libsysinfo.gpuwatchapp.samsung.so,imsmanager,libgpustat.gpuwatchapp.samsung.so,libportrait_controller_interface_jni.camera.samsung.so,scamera_sdk_util,libtensorflowLite.myfilter.camera.samsung.so,libsnap_aidl.snap.samsung.so,libsrib_CNNInterface.camera.samsung.so,libmidas_core.camera.samsung.so,libsjpegxl.media.samsung.so,FabricCryptoLib,com.android.extensions.appfunctions,libndk.vexfwk.samsung.so,libenn_user.samsung_slsi.so,libSmartScan.camera.samsung.so,EpdgManager,uibc_java,libcontextanalyzer_jni.media.samsung.so,libapex_motionphoto_utils_jni.media.samsung.so,libhigh_dynamic_range.arcsoft.so,android.test.runner,libsmart_cropping.camera.samsung.so,libPortraitDistortionCorrection.arcsoft.so,libHIDTSnapJNI.camera.samsung.so,libtensorflowlite_inference_api.myfilter.camera.samsung.so,libface_landmark.arcsoft.so,libFaceRestoration.camera.samsung.so,libamDNN.media.samsung.so,org.apache.http.legacy,libFacialBasedSelfieCorrection.camera.samsung.so,libsimba.media.samsung.so,libSDKonnxruntime.spenocr.samsung.so,com.android.cts.ctsshim.shared_library,com.android.nfc_extras,SmpsManager,com.android.media.remotedisplay,manager_wrapper_compat,libneural.snap.samsung.so,knoxanalyticssdk,com.samsung.android.psitrackersdk.framework-v1,libsecimaging_pdk.camera.samsung.so,com.android.mediadrm.signer,com.samsung.android.privacydashboard.framework-v1,libsce_v1.crypto.samsung.so,androidx.window.sidecar,videoeditor_sdk,libmediasndk.mediacore.samsung.so,libPortraitDistortionCorrectionCali.arcsoft.so,libFacialAttributeDetection.arcsoft.so,libimage_enhancement.arcsoft.so,rcsopenapi,com.sec.android.pmssdk.framework-v1\n`;
+            fileContent += `Features=${fullFeatures}\n`;
+            fileContent += `GSF.version=262531035\n`;
+            fileContent += `UserReadableName=${lowerBrand} ${modelUpper}\n`;
+            fileContent += `Build.RADIO=${modelUpper}XXU1BZF2,${modelUpper}XXU1BZF2\n`;
+            fileContent += `Client=${clientValue}\n`;
+            fileContent += `Locales=af,am,am_ET,ar,ar_AE,ar_IL,as,as_IN,ast,az,az_AZ,be,be_BY,bg,bg_BG,bn,bn_BD,bn_IN,bs,bs_BA,ca,ca_ES,ckb_IQ,ckb_IR,cs,cs_CZ,da,da_DK,de,de_AT,de_CH,de_DE,el,el_GR,en,en_AU,en_CA,en_DI,en_GB,en_IE,en_IN,en_NZ,en_PH,en_US,en_XC,en_ZA,en_ZG,eo,es,es_419,es_ES,es_US,et,et_EE,eu,eu_ES,fa,fa_IR,fi,fi_FI,fil,fil_PH,fr,fr_BE,fr_CA,fr_CH,fr_FR,ga,ga_IE,gl,gl_ES,gu,gu_IN,ha,ha_GH,ha_NE,ha_NG,hi,hi_IN,hr,hr_HR,hu,hu_HU,hy,hy_AM,ig,ig_NG,in,in_ID,is,is_IS,it,it_IT,iw,iw_IL,ja,ja_JP,ka,ka_GE,kab,kk,kk_KZ,km,km_KH,kn,kn_IN,ko,ko_KR,kw,ky,ky_KG,lo,lo_LA,lt,lt_LT,lv,lv_LV,mk,mk_MK,ml,ml_IN,mn,mn_MN,mr,mr_IN,ms,ms_MY,my,my_MM,my_ZG,nb,nb_NO,ne,ne_NP,nl,nl_BE,nl_NL,or,or_IN,pa,pa_IN,pl,pl_PL,pt,pt_BR,pt_PT,ro,ro_RO,ru,ru_RU,si,si_LK,sk,sk_SK,sl,sl_SI,sq,sq_AL,sr,sr_Cyrl_RS,sr_Latn,sr_Latn_RS,sv,sv_SE,sw,sw_CD,sw_KE,sw_TZ,sw_UG,ta,ta_IN,te,te_IN,tg,tg_TJ,th,th_TH,tk,tk_TM,tr,tr_TR,uk,uk_UA,ur,ur_PK,uz,uz_UZ,vi,vi_VN,yo,yo_BJ,yo_NG,yue,zh,zh_CN,zh_HK,zh_TW,zu\n`;
+            fileContent += `Screen.Density=480\n`;
+            fileContent += `Platforms=arm64-v8a,armeabi-v7a,armeabi\n`;
+            fileContent += `Build.PRODUCT=${deviceShort}jvxx\n`;
+            fileContent += `Navigation=1\n`;
+            fileContent += `Keyboard=1\n`;
+            fileContent += `Build.ID=${buildId}\n`;
+            fileContent += `TimeZone=UTC-10\n`;
+            fileContent += `Screen.Width=1080\n`;
+            fileContent += `GL.Extensions=GL_ANDROID_extension_pack_es31a,GL_ARM_mali_program_binary,GL_ARM_mali_shader_binary,GL_ARM_rgba8,GL_ARM_shader_framebuffer_fetch,GL_ARM_shader_framebuffer_fetch_depth_stencil,GL_ARM_texture_unnormalized_coordinates,GL_EXT_EGL_image_array,GL_EXT_YUV_target,GL_EXT_blend_minmax,GL_EXT_buffer_storage,GL_EXT_clip_control,GL_EXT_color_buffer_float,GL_EXT_color_buffer_half_float,GL_EXT_copy_image,GL_EXT_debug_marker,GL_EXT_discard_framebuffer,GL_EXT_disjoint_timer_query,GL_EXT_draw_buffers_indexed,GL_EXT_draw_elements_base_vertex,GL_EXT_external_buffer,GL_EXT_float_blend,GL_EXT_geometry_shader,GL_EXT_gpu_shader5,GL_EXT_multisampled_render_to_texture,GL_EXT_multisampled_render_to_texture2,GL_EXT_occlusion_query_boolean,GL_EXT_primitive_bounding_box,GL_EXT_protected_textures,GL_EXT_read_format_bgra,GL_EXT_robustness,GL_EXT_sRGB,GL_EXT_sRGB_write_control,GL_EXT_shader_framebuffer_fetch,GL_EXT_shader_io_blocks,GL_EXT_shader_non_constant_global_initializers,GL_EXT_shader_pixel_local_storage,GL_EXT_shadow_samplers,GL_EXT_tessellation_shader,GL_EXT_texture_border_clamp,GL_EXT_texture_buffer,GL_EXT_texture_compression_astc_decode_mode,GL_EXT_texture_compression_astc_decode_mode_rgb9e5,GL_EXT_texture_cube_map_array,GL_EXT_texture_filter_anisotropic,GL_EXT_texture_format_BGRA8888,GL_EXT_texture_rg,GL_EXT_texture_sRGB_R8,GL_EXT_texture_sRGB_RG8,GL_EXT_texture_sRGB_decode,GL_EXT_texture_storage,GL_EXT_texture_type_2_10_10_10_REV,GL_EXT_unpack_subimage,GL_KHR_blend_equation_advanced,GL_KHR_blend_equation_advanced_coherent,GL_KHR_debug,GL_KHR_robust_buffer_access_behavior,GL_KHR_robustness,GL_KHR_texture_compression_astc_hdr,GL_KHR_texture_compression_astc_ldr,GL_KHR_texture_compression_astc_sliced_3d,GL_OES_EGL_image,GL_OES_EGL_image_external,GL_OES_EGL_image_external_essl3,GL_OES_EGL_sync,GL_OES_blend_equation_separate,GL_OES_blend_func_separate,GL_OES_blend_subtract,GL_OES_byte_coordinates,GL_OES_compressed_ETC1_RGB8_texture,GL_OES_compressed_paletted_texture,GL_OES_copy_image,GL_OES_depth24,GL_OES_depth_texture,GL_OES_depth_texture_cube_map,GL_OES_draw_buffers_indexed,GL_OES_draw_elements_base_vertex,GL_OES_draw_texture,GL_OES_element_index_uint,GL_OES_extended_matrix_palette,GL_OES_fbo_render_mipmap,GL_OES_fixed_point,GL_OES_framebuffer_object,GL_OES_geometry_shader,GL_OES_get_program_binary,GL_OES_gpu_shader5,GL_OES_mapbuffer,GL_OES_matrix_get,GL_OES_matrix_palette,GL_OES_packed_depth_stencil,GL_OES_point_size_array,GL_OES_point_sprite,GL_OES_primitive_bounding_box,GL_OES_query_matrix,GL_OES_read_format,GL_OES_required_internalformat,GL_OES_rgb8_rgba8,GL_OES_sample_shading,GL_OES_sample_variables,GL_OES_shader_image_atomic,GL_OES_shader_io_blocks,GL_OES_shader_multisample_interpolation,GL_OES_single_precision,GL_OES_standard_derivatives,GL_OES_stencil8,GL_OES_stencil_wrap,GL_OES_surfaceless_context,GL_OES_tessellation_shader,GL_OES_texture_3D,GL_OES_texture_border_clamp,GL_OES_texture_buffer,GL_OES_texture_compression_astc,GL_OES_texture_cube_map,GL_OES_texture_cube_map_array,GL_OES_texture_float_linear,GL_OES_texture_mirrored_repeat,GL_OES_texture_npot,GL_OES_texture_stencil8,GL_OES_texture_storage_multisample_2d_array,GL_OES_vertex_array_object,GL_OES_vertex_half_float,GL_OVR_multiview,GL_OVR_multiview2,GL_OVR_multiview_multisampled_render_to_texture\n`;
+            fileContent += `HasFiveWayNavigation=false\n`;
+            fileContent += `TouchScreen=3\n`;
+            fileContent += `GL.Version=196610\n`;
+            fileContent += `Build.VERSION.RELEASE=${releaseVer}\n`;
+            fileContent += `Build.BOOTLOADER=${modelUpper}XXU1BZF2\n`;
+            fileContent += `Build.MANUFACTURER=${lowerBrand}\n`;
+
+            // Gaming Tweak Flags
+            if (support120Fps.checked) fileContent += `Support120FPS=true\n`;
+            if (supportUltraHd.checked) fileContent += `SupportUltraHD=true\n`;
+            if (unlockMaxGraphics.checked) fileContent += `UnlockMaxGraphics=true\n`;
+            if (unlockEffects.checked) fileContent += `GraphicsEffects=ultra\n`;
+
+            configOutput.value = fileContent;
+        }
+
+        // Đăng ký sự kiện thay đổi dữ liệu để cập nhật Live Preview
+        const allInputs = [
+            deviceModel, deviceHardware, deviceSdk, deviceRelease,
+            support120Fps, supportUltraHd, unlockMaxGraphics, unlockEffects,
+            dolbyAtmos, dolbyVision, dtsAudio,
+            clientGoogle, clientSamsung, clientApple
+        ];
+
+        allInputs.forEach(input => {
+            input.addEventListener('change', generateDeviceConfig);
+            input.addEventListener('keyup', generateDeviceConfig);
+        });
+
+        // Sao chép mã bằng phương thức execCommand an toàn trong môi trường sandbox iFrame
+        btnCopy.addEventListener('click', () => {
+            configOutput.select();
+            configOutput.setSelectionRange(0, 99999); // Dành cho di động
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast("Đã sao chép mã cấu hình thành công!");
+                } else {
+                    showToast("Sao chép không thành công. Hãy thử bôi đen và copy thủ công!");
+                }
+            } catch (err) {
+                showToast("Lỗi sao chép! Trình duyệt của bạn có thể đã chặn quyền.");
+            }
+        });
+
+        // Tải xuống tập tin cấu hình .txt
+        btnDownload.addEventListener('click', () => {
+            const configText = configOutput.value;
+            const blob = new Blob([configText], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            
+            a.href = url;
+            a.download = `device_config_${deviceModel.value.toLowerCase()}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast("Đang chuẩn bị tải xuống file cấu hình...");
+        });
+
+        // Hiển thị thông báo nhanh (Toast)
+        function showToast(message) {
+            toastMessage.textContent = message;
+            toastMessage.classList.remove('opacity-0', 'pointer-events-none');
+            toastMessage.classList.add('opacity-100');
+            
+            setTimeout(() => {
+                toastMessage.classList.remove('opacity-100');
+                toastMessage.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+
+        // Chạy khởi tạo lần đầu khi tải xong DOM
+        window.onload = function() {
+            generateDeviceConfig();
+        }
+    </script>
+</body>
+</html>
