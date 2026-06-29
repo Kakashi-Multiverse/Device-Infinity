@@ -1,39 +1,24 @@
-# 🚀 Samsung Galaxy A57 5G (SM-A576E) - Toàn Diện Cấu Hình Hệ Thống
+# 🚀 Samsung Galaxy A57 5G (SM-A576E) - Comprehensive System Configuration
+This repository provides a fully optimized system configuration file (#DEVICE_CONFIG) for the **Samsung Galaxy A57 5G (Device Model: SM-A576E / Hardware: s5e8865)**.
+The primary goal is to unlock hardware limitations, optimize high-performance gaming graphics, and simulate secure multi-client device identification.
+## 🛠️ System Specifications
+ * **Device:** Samsung Galaxy A57 5G (SM-A576E)
+ * **Hardware (Chipset):** s5e8865 (Next-gen Exynos)
+ * **Operating System:** Android 17 (API/SDK Level: 37)
+ * **Last Updated:** June 2026
+## ✨ Enabled Features (Tweaks)
+ * **Maximized Gaming:** Unlocks **120 FPS** (Support120FPS=true), activates **Ultra HD** resolution, and forces ultra-realistic graphic effects (ultra_realistic).
+ * **Hardware-Accelerated Graphics:** Integrates **Ray Tracing** (RayTracing=true), **AMD RDNA** (SupportAMDRDNA=true), and **NVIDIA DLSS** (SupportNvidiaDLSS=true) libraries for realistic dynamic lighting, shadows, and reflections.
+ * **Multimedia Enhancement:** Deeply integrates **Dolby Atmos**, **Dolby Vision**, and **DTS Audio** drivers directly into the shared libraries (SharedLibraries) and system features (Features).
+ * **Platform Bypass (Multi-Client):** Simultaneously defines 3 client streams: android-google, samsung, and apple to maximize compatibility and bypass app store detection on major platforms.
+## 📂 Repository File Directory
+ * SM-A576E.txt: The raw #DEVICE_CONFIG system configuration file (Updated on June 27, 2026).
+ * index.html: Interactive web-based configuration generator.
+## 📲 Deployment Guide (How to Use)
 
-Kho lưu trữ này cung cấp tệp cấu hình hệ thống `#DEVICE_CONFIG` đã được tối ưu hóa toàn diện cho dòng máy **Samsung Galaxy A57 5G (Mã thiết bị: SM-A576E / Hardware: s5e8865)**. 
-
-Mục đích nhằm mở khóa giới hạn phần cứng, tối ưu hóa hiệu năng gaming đồ họa cao và giả lập định danh hệ thống (Multi-Client) an toàn.
-
----
-
-## 🛠️ Thông Tin Cấu Hình (System Specifications)
-
-* **Thiết bị:** Samsung Galaxy A57 5G (`SM-A576E`)
-* **Phần cứng (Chipset):** `s5e8865` (Exynos thế hệ mới)
-* **Hệ điều hành:** Android 17 (Cấp độ API/SDK: `37`)
-* **Mốc cập nhật:** Tháng 6/2026
-
-## ✨ Các Tính Năng Đã Được Kích Hoạt (Tweaks Enabled)
-
-* ** Gaming Tối Đa:** Mở khóa **120 FPS** (`Support120FPS=true`), Kích hoạt độ phân giải **Ultra HD** và Ép cấu hình hiệu ứng đồ họa cực cao (`ultra`).
-* ** Đa Phương Tiện:** Tích hợp sâu driver xử lý **Dolby Atmos**, **Dolby Vision** và **DTS Audio** vào danh sách thư viện chia sẻ (`SharedLibraries`) và tính năng hệ thống (`Features`).
-* ** Vượt Rào Nền Tảng (Multi-Client):** Định danh đồng thời 3 luồng Client: `android-google`, `samsung`, và `apple` giúp tối ưu hóa khả năng tương thích và nhận diện trên các chợ ứng dụng lớn.
-
----
-
-## 📂 Danh Mục Tệp Tin Trong Repo
-
-* `SM-A576E.txt` : File chứa mã cấu hình gốc `#DEVICE_CONFIG` (Bản cập nhật ngày 27/06/2026).
-* `index.html` : Trình giả lập cấu hình trực quan (nếu bạn sử dụng công cụ tạo giao diện).
-
-## 📲 Hướng Dẫn Triển Khai (How to Use)
-
-1. Tải tệp `SM-A576E.txt` về máy.
-2. Đổi tên tệp thành `device_config.txt` hoặc tên tương ứng mà công cụ của bạn yêu cầu.
-3. Di chuyển/Nạp tệp vào thư mục phân vùng cấu hình hệ thống của ứng dụng bạn muốn giả lập.
-4. Khởi động lại ứng dụng hoặc thiết bị để nhận diện cấu hình đồ họa mới.
-
----
-
-## ⚖️ Tuyên Bố Miễn Trừ Trách Nhiệm (Disclaimer)
-Mã cấu hình này được chia sẻ với mục đích thử nghiệm và tối ưu hóa trải nghiệm cá nhân. Tác giả không chịu trách nhiệm cho bất kỳ sự cố xung đột phần mềm hoặc hạn chế tài khoản nào từ phía nhà phát hành trò chơi do việc thay đổi định danh thiết bị gây ra.
+ 1. Download the SM-A576E.txt file to your device.
+ 2. Rename the file to device_config.txt (or the specific file name required by your modification tool).
+ 3. Move or flash the file into your virtualization tool's system configuration folder or your rooted Android directory.
+ 4. Restart the target app or your device to apply and experience the new extreme graphics settings.
+## ⚖️ Disclaimer
+This configuration code is shared solely for educational, testing, and personal optimization purposes. The author is not responsible for any software conflicts, device bootloops, or account restrictions imposed by game publishers resulting from device identifier modifications.
