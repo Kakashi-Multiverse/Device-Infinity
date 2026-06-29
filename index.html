@@ -108,7 +108,6 @@
                     Tối Ưu Đồ Họa & Tốc Độ Khung Hình (Gaming)
                 </h2>
                 <div class="space-y-4">
-                    <!-- Toggles -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
                             <div>
@@ -145,12 +144,81 @@
 
                         <div class="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700">
                             <div>
-                                <p class="text-sm font-medium">Mở Khóa Toàn Bộ Hiệu Ứng</p>
-                                <p class="text-xs text-gray-400">Đầy đủ đổ bóng, hạt, tương phản</p>
+                                <p class="text-sm font-medium">Đồ Họa Siêu Thực (Ultra Realism)</p>
+                                <p class="text-xs text-gray-400">Tăng cường đổ bóng và tương phản động</p>
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer">
                                 <input type="checkbox" id="unlockEffects" checked class="sr-only peer">
                                 <div class="w-11 h-6 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AMD, Nvidia & Ray Tracing Engine -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-xl">
+                <h2 class="text-base font-semibold mb-4 text-red-400 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364.364l-.707.707M21 12h-1M4 12H3m3.343-5.657l.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    Công Nghệ Đồ Họa AMD, NVIDIA & Ray Tracing
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- AMD RDNA -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-widest">AMD RDNA Engine</span>
+                            <p class="text-xs text-gray-400 mt-1">Giả lập tăng tốc phần cứng GPU AMD RDNA cho các tựa game tối ưu.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="supportAMD" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- NVIDIA Tegra/RTX (DLSS) -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-green-400 uppercase tracking-widest">NVIDIA Tegra/RTX</span>
+                            <p class="text-xs text-gray-400 mt-1">Kích hoạt tập lệnh DLSS và tối ưu phần cứng đồ họa NVIDIA Tegra.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="supportNVIDIA" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-green-500"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Ray Tracing -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest">Ray Tracing (Dò tia)</span>
+                            <p class="text-xs text-gray-400 mt-1">Mở khóa công nghệ phản chiếu ánh sáng và đổ bóng vật lý thực tế.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="supportRayTracing" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-yellow-500"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Realistic Graphics / Realism -->
+                    <div class="p-3 bg-gray-800/40 rounded-lg border border-gray-700/80 flex flex-col justify-between h-28">
+                        <div>
+                            <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">Realism Graphics</span>
+                            <p class="text-xs text-gray-400 mt-1">Bật bộ sinh lọc hình ảnh chân thực, dải màu tương phản động HDR10+.</p>
+                        </div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-xs text-gray-500">Trạng thái</span>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" id="supportRealism" checked class="sr-only peer">
+                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-cyan-500"></div>
                             </label>
                         </div>
                     </div>
@@ -310,6 +378,11 @@
         const unlockMaxGraphics = document.getElementById('unlockMaxGraphics');
         const unlockEffects = document.getElementById('unlockEffects');
         
+        const supportAMD = document.getElementById('supportAMD');
+        const supportNVIDIA = document.getElementById('supportNVIDIA');
+        const supportRayTracing = document.getElementById('supportRayTracing');
+        const supportRealism = document.getElementById('supportRealism');
+
         const dolbyAtmos = document.getElementById('dolbyAtmos');
         const dolbyVision = document.getElementById('dolbyVision');
         const dtsAudio = document.getElementById('dtsAudio');
@@ -336,21 +409,87 @@
             if (clientApple.checked) clients.push('apple');
             const clientValue = clients.join(',');
 
-            // Xử lý các dòng bổ sung cho các tính năng đặc biệt
+            // Xử lý các dòng bổ sung cho các tính năng đặc biệt (Features)
             let extraFeatures = [];
             if (dolbyAtmos.checked) extraFeatures.push('android.hardware.audio.dolby.atmos');
             if (dolbyVision.checked) extraFeatures.push('com.dolby.motion.dolby-vision');
             if (dtsAudio.checked) extraFeatures.push('android.hardware.audio.dts');
+            if (support120Fps.checked) extraFeatures.push('android.hardware.display.120fps');
+            if (supportUltraHd.checked) extraFeatures.push('android.hardware.video.ultrahd');
+            if (unlockMaxGraphics.checked) {
+                extraFeatures.push('com.samsung.feature.graphics.ultramax');
+                extraFeatures.push('com.samsung.feature.graphics.unlock_effects');
+            }
+            if (supportRayTracing.checked) {
+                extraFeatures.push('android.hardware.graphics.raytracing');
+                extraFeatures.push('com.nvidia.feature.rtx');
+            }
+            if (supportAMD.checked) {
+                extraFeatures.push('com.amd.feature.rdna');
+            }
+            if (supportRealism.checked) {
+                extraFeatures.push('android.hardware.graphics.realism');
+            }
 
             const featuresBase = "android.hardware.sensor.proximity,com.google.android.feature.CONTEXTUAL_SEARCH,com.samsung.android.sdk.camera.processor,com.google.android.feature.GEMINI_EXPERIENCE,com.samsung.feature.aodservice_v10,com.sec.feature.motionrecognition_service,com.sec.feature.cover.sview,android.hardware.telephony.ims.singlereg,android.hardware.sensor.accelerometer,android.software.controls,android.hardware.faketouch,android.software.telecom,com.samsung.feature.audio_listenback,android.hardware.telephony.subscription,android.hardware.usb.accessory,android.hardware.telephony.data,android.software.backup,android.hardware.touchscreen,android.hardware.touchscreen.multitouch,android.software.erofs,android.software.print,android.software.activities_on_secondary_displays,com.sec.feature.nfc_authentication_cover,com.google.android.feature.GEMINI_POWER_MENU,com.samsung.feature.SAMSUNG_EXPERIENCE,com.samsung.feature.nowbar,com.google.android.feature.ACCESSIBILITY_PRELOAD,com.sec.feature.nfc_authentication,android.software.voice_recognizers,android.software.picture_in_picture,android.hardware.fingerprint,com.samsung.android.knox.knoxsdk,android.hardware.telephony.satellite,android.hardware.sensor.gyroscope,android.hardware.audio.low_latency,android.software.vulkan.deqp.level,android.software.cant_save_state,android.hardware.security.model.compatible,android.hardware.telephony.messaging,com.samsung.feature.device_category_phone,android.hardware.telephony.calling,android.hardware.opengles.aep,com.sec.feature.sensorhub,android.hardware.bluetooth,android.software.window_magnification,android.hardware.telephony.radio.access,android.hardware.camera.autofocus,android.hardware.telephony.gsm,android.hardware.telephony.ims,com.sec.feature.cocktailpanel,android.software.incremental_delivery,android.software.sip.voip,android.software.opengles.deqp.level,com.sec.feature.saccessorymanager,com.android.extensions.computercontrol,com.google.android.feature.CONTEXTUAL_SEARCH_LIVE_TRANSLATE,com.samsung.feature.samsung_experience_mobile,com.samsung.android.camera.cameraserviceworker,android.hardware.usb.host,android.hardware.audio.output,android.software.verified_boot,android.hardware.camera.flash,android.hardware.camera.front,android.hardware.se.omapi.uicc,android.hardware.screen.portrait,com.google.android.feature.ASI,android.hardware.nfc,com.google.android.feature.TURBO_PRELOAD,com.samsung.feature.ipsgeofence,com.nxp.mifare,com.samsung.feature.SAMSUNG_EXPERIENCE_AM,android.hardware.sensor.stepdetector,android.software.home_screen,android.hardware.microphone,com.sec.feature.cover.clearcameraviewcover,com.samsung.feature.aremoji.v2,android.software.autofill,com.samsung.android.sdk.camera.processor.effect,android.software.securely_removes_users,android.hardware.bluetooth_le,android.hardware.sensor.compass,android.hardware.touchscreen.multitouch.jazzhand,android.software.app_widgets,android.software.input_methods,android.hardware.sensor.light,android.hardware.vulkan.version,android.software.companion_device_setup,android.software.device_admin,android.hardware.wifi.passpoint,android.hardware.camera,android.software.credentials,android.hardware.screen.landscape,android.software.device_id_attestation,com.google.android.feature.AER_OPTIMIZED,android.hardware.ram.normal,com.samsung.feature.samsungpositioning.snlp,com.samsung.android.authfw,com.samsung.android.api.version.2402,com.samsung.android.api.version.2403,com.samsung.android.api.version.2501,com.samsung.android.api.version.2502,com.samsung.android.api.version.2601,com.samsung.android.api.version.2701,com.samsung.android.api.version.2801,com.samsung.android.api.version.2802,com.samsung.android.api.version.2803,com.samsung.android.api.version.2901,com.samsung.android.api.version.2902,com.samsung.android.api.version.2903,com.samsung.android.api.version.3001,com.samsung.android.api.version.3002,com.samsung.android.api.version.3101,com.samsung.android.api.version.3201,com.samsung.android.api.version.3301,com.samsung.android.api.version.3302,com.samsung.android.api.version.3401,com.samsung.android.api.version.3402,com.samsung.android.api.version.3501,com.samsung.android.api.version.3601,com.samsung.android.api.version.3602,com.samsung.android.api.version.3701,com.samsung.android.api.version.3702,com.sec.feature.cover,android.software.managed_users,com.sec.feature.nsflp,android.software.webview,android.hardware.sensor.stepcounter,android.hardware.camera.any,android.hardware.vulkan.compute,com.samsung.android.oneui.version.10000,com.samsung.android.oneui.version.10100,com.samsung.android.oneui.version.10200,com.samsung.android.oneui.version.10500,com.samsung.android.oneui.version.20000,com.samsung.android.oneui.version.20100,com.samsung.android.oneui.version.20500,com.samsung.android.oneui.version.30000,com.samsung.android.oneui.version.30100,com.samsung.android.oneui.version.30101,com.samsung.android.oneui.version.40000,com.samsung.android.oneui.version.40100,com.samsung.android.oneui.version.40101,com.samsung.android.oneui.version.50000,com.samsung.android.oneui.version.50100,com.samsung.android.oneui.version.50101,com.samsung.android.oneui.version.60000,com.samsung.android.oneui.version.60100,com.samsung.android.oneui.version.60101,com.samsung.android.oneui.version.70000,com.samsung.android.oneui.version.80000,com.samsung.android.oneui.version.80500,android.hardware.touchscreen.multitouch.distinct,android.hardware.location.network,com.sec.android.secimaging,android.software.cts,android.software.sip,android.software.app_enumeration,com.sec.feature.usb_authentication,android.hardware.wifi.direct,android.software.live_wallpaper,android.software.ipsec_tunnels,samsung.software.secure_key_service,android.software.freeform_window_management,android.hardware.audio.pro,android.hardware.nfc.hcef,android.hardware.nfc.uicc,com.samsung.feature.support_repair_mode,android.hardware.location.gps,com.samsung.android.camera.deviceinjector,android.software.midi,com.samsung.feature.samsungpositioning,android.hardware.nfc.any,android.hardware.nfc.hce,android.hardware.hardware_keystore,com.sec.feature.pocketsensitivitymode,android.hardware.wifi,android.hardware.location,com.google.android.mainline.patchlevel.2,android.hardware.vulkan.level,android.hardware.keystore.app_attest_key,com.samsung.android.cameraxservice,com.samsung.android.knox.knoxsdk.api.level.33,com.samsung.android.knox.knoxsdk.api.level.34,com.samsung.android.knox.knoxsdk.api.level.35,com.samsung.android.knox.knoxsdk.api.level.36,com.samsung.android.knox.knoxsdk.api.level.37,com.samsung.android.knox.knoxsdk.api.level.38,com.samsung.android.knox.knoxsdk.api.level.39,com.samsung.android.knox.knoxsdk.api.level.40,com.samsung.android.knox.knoxsdk.api.level.41,android.hardware.wifi.aware,android.software.secure_lock_screen,android.hardware.biometrics.face,com.samsung.feature.EXPERIENCE_CTS,android.hardware.telephony,com.sec.android.smartface.smart_stay,android.software.file_based_encryption";
             
-            // Hợp nhất các features bổ sung
             let fullFeatures = featuresBase;
             if (extraFeatures.length > 0) {
                 fullFeatures += "," + extraFeatures.join(",");
             }
 
-            // Chữ ký thiết bị giả định (fingerprint) dựa trên đầu vào
+            // Xử lý nạp thư viện OpenGL Extensions mở rộng
+            let glExtensionsList = [
+                "GL_ANDROID_extension_pack_es31a", "GL_ARM_mali_program_binary", "GL_ARM_mali_shader_binary", 
+                "GL_ARM_rgba8", "GL_ARM_shader_framebuffer_fetch", "GL_ARM_shader_framebuffer_fetch_depth_stencil", 
+                "GL_ARM_texture_unnormalized_coordinates", "GL_EXT_EGL_image_array", "GL_EXT_YUV_target", 
+                "GL_EXT_blend_minmax", "GL_EXT_buffer_storage", "GL_EXT_clip_control", "GL_EXT_color_buffer_float", 
+                "GL_EXT_color_buffer_half_float", "GL_EXT_copy_image", "GL_EXT_debug_marker", "GL_EXT_discard_framebuffer", 
+                "GL_EXT_disjoint_timer_query", "GL_EXT_draw_buffers_indexed", "GL_EXT_draw_elements_base_vertex", 
+                "GL_EXT_external_buffer", "GL_EXT_float_blend", "GL_EXT_geometry_shader", "GL_EXT_gpu_shader5", 
+                "GL_EXT_multisampled_render_to_texture", "GL_EXT_multisampled_render_to_texture2", "GL_EXT_occlusion_query_boolean", 
+                "GL_EXT_primitive_bounding_box", "GL_EXT_protected_textures", "GL_EXT_read_format_bgra", "GL_EXT_robustness", 
+                "GL_EXT_sRGB", "GL_EXT_sRGB_write_control", "GL_EXT_shader_framebuffer_fetch", "GL_EXT_shader_io_blocks", 
+                "GL_EXT_shader_non_constant_global_initializers", "GL_EXT_shader_pixel_local_storage", "GL_EXT_shadow_samplers", 
+                "GL_EXT_tessellation_shader", "GL_EXT_texture_border_clamp", "GL_EXT_texture_buffer", 
+                "GL_EXT_texture_compression_astc_decode_mode", "GL_EXT_texture_compression_astc_decode_mode_rgb9e5", 
+                "GL_EXT_texture_cube_map_array", "GL_EXT_texture_filter_anisotropic", "GL_EXT_texture_format_BGRA8888", 
+                "GL_EXT_texture_rg", "GL_EXT_texture_sRGB_R8", "GL_EXT_texture_sRGB_RG8", "GL_EXT_texture_sRGB_decode", 
+                "GL_EXT_texture_storage", "GL_EXT_texture_type_2_10_10_10_REV", "GL_EXT_unpack_subimage", 
+                "GL_KHR_blend_equation_advanced", "GL_KHR_blend_equation_advanced_coherent", "GL_KHR_debug", 
+                "GL_KHR_robust_buffer_access_behavior", "GL_KHR_robustness", "GL_KHR_texture_compression_astc_hdr", 
+                "GL_KHR_texture_compression_astc_ldr", "GL_KHR_texture_compression_astc_sliced_3d", "GL_OES_EGL_image", 
+                "GL_OES_EGL_image_external", "GL_OES_EGL_image_external_essl3", "GL_OES_EGL_sync", "GL_OES_blend_equation_separate", 
+                "GL_OES_blend_func_separate", "GL_OES_blend_subtract", "GL_OES_byte_coordinates", "GL_OES_compressed_ETC1_RGB8_texture", 
+                "GL_OES_compressed_paletted_texture", "GL_OES_copy_image", "GL_OES_depth24", "GL_OES_depth_texture", 
+                "GL_OES_depth_texture_cube_map", "GL_OES_draw_buffers_indexed", "GL_OES_draw_elements_base_vertex", 
+                "GL_OES_draw_texture", "GL_OES_element_index_uint", "GL_OES_extended_matrix_palette", "GL_OES_fbo_render_mipmap", 
+                "GL_OES_fixed_point", "GL_OES_framebuffer_object", "GL_OES_geometry_shader", "GL_OES_get_program_binary", 
+                "GL_OES_gpu_shader5", "GL_OES_mapbuffer", "GL_OES_matrix_get", "GL_OES_matrix_palette", "GL_OES_packed_depth_stencil", 
+                "GL_OES_point_size_array", "GL_OES_point_sprite", "GL_OES_primitive_bounding_box", "GL_OES_query_matrix", 
+                "GL_OES_read_format", "GL_OES_required_internalformat", "GL_OES_rgb8_rgba8", "GL_OES_sample_shading", 
+                "GL_OES_sample_variables", "GL_OES_shader_image_atomic", "GL_OES_shader_io_blocks", "GL_OES_shader_multisample_interpolation", 
+                "GL_OES_single_precision", "GL_OES_standard_derivatives", "GL_OES_stencil8", "GL_OES_stencil_wrap", 
+                "GL_OES_surfaceless_context", "GL_OES_tessellation_shader", "GL_OES_texture_3D", "GL_OES_texture_border_clamp", 
+                "GL_OES_texture_buffer", "GL_OES_texture_compression_astc", "GL_OES_texture_cube_map", "GL_OES_texture_cube_map_array", 
+                "GL_OES_texture_float_linear", "GL_OES_texture_mirrored_repeat", "GL_OES_texture_npot", "GL_OES_texture_stencil8", 
+                "GL_OES_texture_storage_multisample_2d_array", "GL_OES_vertex_array_object", "GL_OES_vertex_half_float", 
+                "GL_OVR_multiview", "GL_OVR_multiview2", "GL_OVR_multiview_multisampled_render_to_texture"
+            ];
+
+            if (supportRayTracing.checked) {
+                glExtensionsList.push("GL_NV_ray_tracing");
+                glExtensionsList.push("GL_NV_fragment_program2");
+            }
+            if (supportAMD.checked) {
+                glExtensionsList.push("GL_AMD_gpu_shader_half_float");
+                glExtensionsList.push("GL_AMD_performance_monitor");
+            }
+            if (supportRealism.checked) {
+                glExtensionsList.push("GL_EXT_color_buffer_float");
+            }
+
+            // Khởi tạo chữ ký thiết bị giả lập (fingerprint)
             const modelUpper = deviceModel.value.toUpperCase();
             const lowerBrand = "samsung";
             const deviceShort = "a57x";
@@ -358,7 +497,7 @@
             const sdkInt = deviceSdk.value;
             const releaseVer = deviceRelease.value;
 
-            // Xây dựng chuỗi tệp tin
+            // Xây dựng chuỗi tệp tin cấu hình
             let fileContent = `#DEVICE_CONFIG\n`;
             fileContent += `#${dateStr}\n`;
             fileContent += `HasHardKeyboard=false\n`;
@@ -372,7 +511,7 @@
             fileContent += `CellOperator=310\n`;
             fileContent += `Build.FINGERPRINT=${lowerBrand}/${deviceShort}jvxx/${deviceShort}:${releaseVer}/${buildId}/${modelUpper}XXU1BZF2:user/release-keys\n`;
             fileContent += `Build.DEVICE=${deviceShort}\n`;
-            fileContent += `Screen.Height=2340\n`;
+            fileContent += `Screen.Height=2400\n`;
             fileContent += `SimOperator=38\n`;
             fileContent += `ScreenLayout=2\n`;
             fileContent += `SharedLibraries=libFood.camera.samsung.so,libFacePreProcessing_jni.camera.samsung.so,lib_nativeJni.dk.samsung.so,libStride.camera.samsung.so,android.test.base,android.test.mock,sec_platform_library,com.samsung.device,libomission_avoidance.factory.samsung.so,SemAudioThumbnail,libenn_public_api_cpp.so,libSDKMoireDetector.spenocr.samsung.so,libInteractiveSegmentation.camera.samsung.so,com.sec.esecomm,com.samsung.android.ibs.framework-v1,libDLInterface_aidl.camera.samsung.so,android.hidl.manager-V1.0-java,libBeauty_v4.camera.samsung.so,libsimba.cfa.media.samsung.so,libUltraWideDistortionCorrection.camera.samsung.so,libImageScreener.camera.samsung.so,libsecimaging.camera.samsung.so,com.samsung.android.semtelephonesdk.framework-v1,libcore2nativeutil.camera.samsung.so,com.android.hotwordenrollment.common.util,libDualCamBokehCapture.camera.samsung.so,vsimmanager,libhumantracking_util.camera.samsung.so,libSDKRecognitionOCR.spenocr.samsung.so,libknox_remotedesktopclient.knox.samsung.so,libOpenCv.camera.samsung.so,libtflite2.myfilters.camera.samsung.so,libsec_camerax_util_jni.camera.samsung.so,libOpenCL.so,libhal.wsm.samsung.so,libFoodDetector.camera.samsung.so,libSDKRecognitionText.spensdk.samsung.so,libaudiomirroring_jni.audiomirroring.samsung.so,lib_native_client.dk.samsung.so,libMyFilterPlugin.camera.samsung.so,libperfsdk.performance.samsung.so,libmotionphoto_jni.media.samsung.so,android.telephony.satellite,libSEF.quram.so,mcfsdk,libhumantracking.arcsoft.so,android.hidl.base-V1.0-java,libsume_mediabuffer_jni.media.samsung.so,libmetadata.vexfwk.samsung.so,libsrib_MQA.camera.samsung.so,libFacialStickerEngine.arcsoft.so,libimgproc.vexfwk.samsung.so,libtensorflowlite_c.camera.samsung.so,libruntime.vexfwk.samsung.so,libQREngine.camera.samsung.so,com.samsung.bbc,libjpegsq.media.samsung.so,libHprFace_GAE_jni.camera.samsung.so,libheifcapture_jni.media.samsung.so,SecureKeyBlob,samsungkeystoreutils,libLocalTM_wrapper.camera.samsung.so,lib.engmodejni.samsung.so,com.android.extensions.computercontrol,libportrait_controller_engine.camera.samsung.so,libopencv_java4.12.media.samsung.so,libRectify.camera.samsung.so,libPortraitSolution.camera.samsung.so,libimagecodec.quram.so,com.android.location.provider,secimaging,worker_wrapper_compat,androidx.window.extensions,MnxbService,knoxsdk,semextendedformat,semmediatranscoder,libobjectcapture_jni.arcsoft.so,libsurfaceutil.camera.samsung.so,libMyFilter.camera.samsung.so,libRemasterEngine.camera.samsung.so,libsrib_humanaware_engine.camera.samsung.so,libagifencoder.quram.so,libsum_jni.media.samsung.so,android.net.ipsec.ike,libsecjpeginterface.camera.samsung.so,libgfxgrab.gpuwatchapp.samsung.so,libeden_rt_stub.edensdk.samsung.so,libFace_Landmark_API.camera.samsung.so,com.android.future.usb.accessory,libDocRectifyWrapper.camera.samsung.so,lib_vnd_client.dk.samsung.so,saiv,androidx.camera.extensions.impl,libslljpeg.media.samsung.so,libmotionphoto_utils_jni.media.samsung.so,libcommon-jni.vexfwk.samsung.so,ztsdk,android.ext.shared,libEventDetector.camera.samsung.so,libandroid.vexfwk.samsung.so,libsume_jni.media.samsung.so,libveengine.arcsoft.so,libveframework.videoeditor.samsung.so,libImageCropper.camera.samsung.so,libSFEffect.fonteffect.samsung.so,libsdk-v2-jni.vexfwk.samsung.so,javax.obex,libsemimagecrop_jni.media.samsung.so,com.google.android.gms,libStrideTensorflowLite.camera.samsung.so,libC2paDps.camera.samsung.so,libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so,libjpega.camera.samsung.so,libmidas_DNNInterface.camera.samsung.so,liblow_light_hdr.arcsoft.so,PQCKeystoreProvider,com.samsung.android.nfc.adapter,libsecbufferhandler.camera.samsung.so,libexifa.camera.samsung.so,com.sec.android.sdhmssdk.framework-v1,libImageTagger.camera.samsung.so,libobjectcapture.arcsoft.so,libHprFace_GAE_api.camera.samsung.so,libsysinfo.gpuwatchapp.samsung.so,imsmanager,libgpustat.gpuwatchapp.samsung.so,libportrait_controller_interface_jni.camera.samsung.so,scamera_sdk_util,libtensorflowLite.myfilter.camera.samsung.so,libsnap_aidl.snap.samsung.so,libsrib_CNNInterface.camera.samsung.so,libmidas_core.camera.samsung.so,libsjpegxl.media.samsung.so,FabricCryptoLib,com.android.extensions.appfunctions,libndk.vexfwk.samsung.so,libenn_user.samsung_slsi.so,libSmartScan.camera.samsung.so,EpdgManager,uibc_java,libcontextanalyzer_jni.media.samsung.so,libapex_motionphoto_utils_jni.media.samsung.so,libhigh_dynamic_range.arcsoft.so,android.test.runner,libsmart_cropping.camera.samsung.so,libPortraitDistortionCorrection.arcsoft.so,libHIDTSnapJNI.camera.samsung.so,libtensorflowlite_inference_api.myfilter.camera.samsung.so,libface_landmark.arcsoft.so,libFaceRestoration.camera.samsung.so,libamDNN.media.samsung.so,org.apache.http.legacy,libFacialBasedSelfieCorrection.camera.samsung.so,libsimba.media.samsung.so,libSDKonnxruntime.spenocr.samsung.so,com.android.cts.ctsshim.shared_library,com.android.nfc_extras,SmpsManager,com.android.media.remotedisplay,manager_wrapper_compat,libneural.snap.samsung.so,knoxanalyticssdk,com.samsung.android.psitrackersdk.framework-v1,libsecimaging_pdk.camera.samsung.so,com.android.mediadrm.signer,com.samsung.android.privacydashboard.framework-v1,libsce_v1.crypto.samsung.so,androidx.window.sidecar,videoeditor_sdk,libmediasndk.mediacore.samsung.so,libPortraitDistortionCorrectionCali.arcsoft.so,libFacialAttributeDetection.arcsoft.so,libimage_enhancement.arcsoft.so,rcsopenapi,com.sec.android.pmssdk.framework-v1\n`;
@@ -390,7 +529,7 @@
             fileContent += `Build.ID=${buildId}\n`;
             fileContent += `TimeZone=UTC-10\n`;
             fileContent += `Screen.Width=1080\n`;
-            fileContent += `GL.Extensions=GL_ANDROID_extension_pack_es31a,GL_ARM_mali_program_binary,GL_ARM_mali_shader_binary,GL_ARM_rgba8,GL_ARM_shader_framebuffer_fetch,GL_ARM_shader_framebuffer_fetch_depth_stencil,GL_ARM_texture_unnormalized_coordinates,GL_EXT_EGL_image_array,GL_EXT_YUV_target,GL_EXT_blend_minmax,GL_EXT_buffer_storage,GL_EXT_clip_control,GL_EXT_color_buffer_float,GL_EXT_color_buffer_half_float,GL_EXT_copy_image,GL_EXT_debug_marker,GL_EXT_discard_framebuffer,GL_EXT_disjoint_timer_query,GL_EXT_draw_buffers_indexed,GL_EXT_draw_elements_base_vertex,GL_EXT_external_buffer,GL_EXT_float_blend,GL_EXT_geometry_shader,GL_EXT_gpu_shader5,GL_EXT_multisampled_render_to_texture,GL_EXT_multisampled_render_to_texture2,GL_EXT_occlusion_query_boolean,GL_EXT_primitive_bounding_box,GL_EXT_protected_textures,GL_EXT_read_format_bgra,GL_EXT_robustness,GL_EXT_sRGB,GL_EXT_sRGB_write_control,GL_EXT_shader_framebuffer_fetch,GL_EXT_shader_io_blocks,GL_EXT_shader_non_constant_global_initializers,GL_EXT_shader_pixel_local_storage,GL_EXT_shadow_samplers,GL_EXT_tessellation_shader,GL_EXT_texture_border_clamp,GL_EXT_texture_buffer,GL_EXT_texture_compression_astc_decode_mode,GL_EXT_texture_compression_astc_decode_mode_rgb9e5,GL_EXT_texture_cube_map_array,GL_EXT_texture_filter_anisotropic,GL_EXT_texture_format_BGRA8888,GL_EXT_texture_rg,GL_EXT_texture_sRGB_R8,GL_EXT_texture_sRGB_RG8,GL_EXT_texture_sRGB_decode,GL_EXT_texture_storage,GL_EXT_texture_type_2_10_10_10_REV,GL_EXT_unpack_subimage,GL_KHR_blend_equation_advanced,GL_KHR_blend_equation_advanced_coherent,GL_KHR_debug,GL_KHR_robust_buffer_access_behavior,GL_KHR_robustness,GL_KHR_texture_compression_astc_hdr,GL_KHR_texture_compression_astc_ldr,GL_KHR_texture_compression_astc_sliced_3d,GL_OES_EGL_image,GL_OES_EGL_image_external,GL_OES_EGL_image_external_essl3,GL_OES_EGL_sync,GL_OES_blend_equation_separate,GL_OES_blend_func_separate,GL_OES_blend_subtract,GL_OES_byte_coordinates,GL_OES_compressed_ETC1_RGB8_texture,GL_OES_compressed_paletted_texture,GL_OES_copy_image,GL_OES_depth24,GL_OES_depth_texture,GL_OES_depth_texture_cube_map,GL_OES_draw_buffers_indexed,GL_OES_draw_elements_base_vertex,GL_OES_draw_texture,GL_OES_element_index_uint,GL_OES_extended_matrix_palette,GL_OES_fbo_render_mipmap,GL_OES_fixed_point,GL_OES_framebuffer_object,GL_OES_geometry_shader,GL_OES_get_program_binary,GL_OES_gpu_shader5,GL_OES_mapbuffer,GL_OES_matrix_get,GL_OES_matrix_palette,GL_OES_packed_depth_stencil,GL_OES_point_size_array,GL_OES_point_sprite,GL_OES_primitive_bounding_box,GL_OES_query_matrix,GL_OES_read_format,GL_OES_required_internalformat,GL_OES_rgb8_rgba8,GL_OES_sample_shading,GL_OES_sample_variables,GL_OES_shader_image_atomic,GL_OES_shader_io_blocks,GL_OES_shader_multisample_interpolation,GL_OES_single_precision,GL_OES_standard_derivatives,GL_OES_stencil8,GL_OES_stencil_wrap,GL_OES_surfaceless_context,GL_OES_tessellation_shader,GL_OES_texture_3D,GL_OES_texture_border_clamp,GL_OES_texture_buffer,GL_OES_texture_compression_astc,GL_OES_texture_cube_map,GL_OES_texture_cube_map_array,GL_OES_texture_float_linear,GL_OES_texture_mirrored_repeat,GL_OES_texture_npot,GL_OES_texture_stencil8,GL_OES_texture_storage_multisample_2d_array,GL_OES_vertex_array_object,GL_OES_vertex_half_float,GL_OVR_multiview,GL_OVR_multiview2,GL_OVR_multiview_multisampled_render_to_texture\n`;
+            fileContent += `GL.Extensions=${glExtensionsList.join(",")}\n`;
             fileContent += `HasFiveWayNavigation=false\n`;
             fileContent += `TouchScreen=3\n`;
             fileContent += `GL.Version=196610\n`;
@@ -402,7 +541,13 @@
             if (support120Fps.checked) fileContent += `Support120FPS=true\n`;
             if (supportUltraHd.checked) fileContent += `SupportUltraHD=true\n`;
             if (unlockMaxGraphics.checked) fileContent += `UnlockMaxGraphics=true\n`;
-            if (unlockEffects.checked) fileContent += `GraphicsEffects=ultra\n`;
+            if (unlockEffects.checked) fileContent += `GraphicsEffects=ultra_realistic\n`;
+            
+            // Ép thêm các cờ tối ưu đồ họa AMD/Nvidia/RayTracing
+            if (supportRayTracing.checked) fileContent += `RayTracing=true\n`;
+            if (supportAMD.checked) fileContent += `SupportAMDRDNA=true\n`;
+            if (supportNVIDIA.checked) fileContent += `SupportNvidiaDLSS=true\n`;
+            if (supportRealism.checked) fileContent += `RealismGraphics=true\n`;
 
             configOutput.value = fileContent;
         }
@@ -411,6 +556,7 @@
         const allInputs = [
             deviceModel, deviceHardware, deviceSdk, deviceRelease,
             support120Fps, supportUltraHd, unlockMaxGraphics, unlockEffects,
+            supportAMD, supportNVIDIA, supportRayTracing, supportRealism,
             dolbyAtmos, dolbyVision, dtsAudio,
             clientGoogle, clientSamsung, clientApple
         ];
