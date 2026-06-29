@@ -28,8 +28,6 @@ Mục đích nhằm mở khóa giới hạn phần cứng, tối ưu hóa hiệu
 
 ## 📲 Hướng Dẫn Triển Khai (How to Use)
 
-> ⚠️ **Lưu ý:** Việc nạp cấu hình hệ thống yêu cầu thiết bị ảo hoặc thiết bị gốc đã được can thiệp sâu (Root/Magisk/LSPosed hoặc sử dụng các công cụ tối ưu hóa như GLTools, Aurora Services).
-
 1. Tải tệp `SM-A576E.txt` về máy.
 2. Đổi tên tệp thành `device_config.txt` hoặc tên tương ứng mà công cụ của bạn yêu cầu.
 3. Di chuyển/Nạp tệp vào thư mục phân vùng cấu hình hệ thống của ứng dụng bạn muốn giả lập.
